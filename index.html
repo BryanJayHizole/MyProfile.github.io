@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="Images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="pages/about.html">ABOUT</a></li>
+					<li><a href="pages/contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<div class="text-box">
+			<h3>Hi, There!</h3>
+			<h1>I am Bryan Jay Hizole</h1>
+			<p>“You are unique. You have different talents and abilities. You don’t have to always follow in the footsteps of others. And most importantly, <br>you should always remind yourself that you don't have to do what everyone else is doing and<br> have a responsibility to develop the talents you have been given.”</p>
+			<a href="" class="hero-btn">More About Me</a>
+		</div>
+	</section>
+
+	<!-------course---->
+
+	<section class="hobbies">
+		<h1>My Hobbies</h1>
+		<p>Here are some of the hobbies i do on my free time.</p>
+
+		<div class="row">
+			<div class="hobbies-col">
+				<h3>Watching</h3>
+				<p>I watched kdrama, cdrama, and anime mostly at night to help me sleep earlier. It also serve as my time to learn new vocabulary words that is used on conversation.</p>
+			</div>
+			<div class="hobbies-col">
+				<h3>Reading</h3>
+				<p>I read novels and manhwa on my break time to help me relax my mind after attending class and other stuff.</p>
+			</div>
+			<div class="hobbies-col">
+				<h3>Playing</h3>
+				<p>I play mobile legends and other MMORPG games mostly as a way for me to enjoy and communicate with other people far from me.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="school">
+		<h1>Main Campus</h1>
+		<p>This are the location of different campus of the university that im currently attending.</p>
+
+		<div class="row">
+			<div class="school-col">
+				<img src="Images/Marinduque-State-College.jpg">
+				<div class="layer">
+					<h3>Boac</h3>
+				</div>
+			</div>
+			<div class="school-col">
+				<img src="Images/gasan_28.jpg">
+				<div class="layer">
+					<h3>Gasan</h3>
+				</div>
+			</div>
+			<div class="school-col">
+				<img src="Images/stacruz.jpg">
+				<div class="layer">
+					<h3>Sta.Cruz</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!----Footer---->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>This webiste is all about information about the creator of this website</p>
+		<div class="icons">
+			<i class="fa fa-facebook-square"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-twitter"></i>
+		</div>
+		<p>Made with <i class="fa fa-heart-o"></i> passion </p>
+	</section>
+<!----------JavaScript fot Toggle Menu----------->
+<script>
+	var navLinks = document.getElementById("navLinks")
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
